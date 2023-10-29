@@ -318,7 +318,6 @@ public class MainActivity extends AppCompatActivity {
 
                     if (buffer[bytes] == '\n'){
                         readMessage = new String(buffer,0,bytes);
-                       // Log.i("ok",readMessage);
 
 
                         handler.obtainMessage(MESSAGE_READ,readMessage).sendToTarget();
